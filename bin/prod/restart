@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+SCRIPT=`realpath $0`
+SCRIPTPATH=`dirname $SCRIPT`
+
+$SCRIPTPATH/stop
+sleep 3
+$SCRIPTPATH/start
+sleep 1
+$SCRIPTPATH/status
